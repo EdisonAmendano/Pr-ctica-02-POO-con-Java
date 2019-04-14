@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class NoVascular extends Vegetal{
+public final class NoVascular extends Vegetal{
     
     private String tipo;
     private boolean rizoides;

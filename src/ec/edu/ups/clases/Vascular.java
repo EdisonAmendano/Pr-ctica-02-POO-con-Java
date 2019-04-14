@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class Vascular extends Vegetal{
+public final class Vascular extends Vegetal{
     private double tamanoRaiz;
     private double tamanoallo;
     private double tamanoHoja;

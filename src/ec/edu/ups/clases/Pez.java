@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class Pez extends Animal{
+public final class Pez extends Animal{
     private double profundidad;
     private int numeroDeAletas;
     private String aguaDulceSalada;

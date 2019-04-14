@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class Ave extends Animal{
+public final class Ave extends Animal{
     
     private double maximoAlturaVuelo;
     private double tamanoAlas;
