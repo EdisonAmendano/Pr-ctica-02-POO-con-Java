@@ -51,7 +51,7 @@ public class NoVascular extends Vegetal{
 
     @Override
     public boolean usarVegetal() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return true;
     }
     
 }
