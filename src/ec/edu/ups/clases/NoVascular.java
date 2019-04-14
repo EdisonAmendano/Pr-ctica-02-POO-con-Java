@@ -11,4 +11,42 @@ package ec.edu.ups.clases;
  */
 public class NoVascular extends Vegetal{
     
+    private String tipo;
+    private boolean rizoides;
+    private boolean escamas;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public boolean isRizoides() {
+        return rizoides;
+    }
+
+    public void setRizoides(boolean rizoides) {
+        this.rizoides = rizoides;
+    }
+
+    public boolean isEscamas() {
+        return escamas;
+    }
+
+    public void setEscamas(boolean escamas) {
+        this.escamas = escamas;
+    }
+    
+    public boolean hacerFotosintecis(){
+        return true;
+    }
+    public boolean consumirO2(){
+        return true;
+    }
+    public boolean botarCO2(){
+        return true;
+    }
+    
 }
