@@ -16,6 +16,23 @@ public final class Vascular extends Vegetal implements Acciones{
     private double tamanoallo;
     private double tamanoHoja;
     private int cantidadMaximaFrutos;
+    
+    public Vascular(){
+        
+    }
+
+    public Vascular(boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano) {
+        super(hojas, fruto, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
+    }
+
+    public Vascular(double tamanoRaiz, double tamanoallo, double tamanoHoja, int cantidadMaximaFrutos, boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano) {
+        super(hojas, fruto, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
+        this.tamanoRaiz = tamanoRaiz;
+        this.tamanoallo = tamanoallo;
+        this.tamanoHoja = tamanoHoja;
+        this.cantidadMaximaFrutos = cantidadMaximaFrutos;
+    }
+    
 
     public double getTamanoRaiz() {
         return tamanoRaiz;

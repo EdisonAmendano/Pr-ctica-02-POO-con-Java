@@ -16,6 +16,22 @@ public abstract class Animal extends SerVivo implements Acciones{
     private String color;
     private String tipoAlimento;
     private boolean capacidadCazar;
+    
+    public Animal(){
+        
+    }
+
+    public Animal(String nombre, int anosVida, double peso, double tamano) {
+        super(nombre, anosVida, peso, tamano);
+    }
+
+    public Animal(String domesticoSalvaje, String color, String tipoAlimento, boolean capacidadCazar, String nombre, int anosVida, double peso, double tamano) {
+        super(nombre, anosVida, peso, tamano);
+        this.domesticoSalvaje = domesticoSalvaje;
+        this.color = color;
+        this.tipoAlimento = tipoAlimento;
+        this.capacidadCazar = capacidadCazar;
+    }
 
     public String getDomesticoSalvaje() {
         return domesticoSalvaje;

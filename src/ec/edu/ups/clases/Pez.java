@@ -16,6 +16,23 @@ public final class Pez extends Animal implements Acciones{
     private int numeroDeAletas;
     private String aguaDulceSalada;
     private String tipoDePez;
+    
+    public Pez (){
+        
+    }
+
+    public Pez(String domesticoSalvaje, String color, String tipoAlimento, boolean capacidadCazar, String nombre, int anosVida, double peso, double tamano) {
+        super(domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
+    }
+
+    public Pez(double profundidad, int numeroDeAletas, String aguaDulceSalada, String tipoDePez, String domesticoSalvaje, String color, String tipoAlimento, boolean capacidadCazar, String nombre, int anosVida, double peso, double tamano) {
+        super(domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
+        this.profundidad = profundidad;
+        this.numeroDeAletas = numeroDeAletas;
+        this.aguaDulceSalada = aguaDulceSalada;
+        this.tipoDePez = tipoDePez;
+    }
+    
 
     public double getProfundidad() {
         return profundidad;

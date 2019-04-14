@@ -17,6 +17,23 @@ public final class Ave extends Animal implements Acciones{
     private double tamanoAlas;
     private boolean volar;
     private boolean nadar;
+    
+    public Ave(){
+        
+    }
+
+    public Ave(String domesticoSalvaje, String color, String tipoAlimento, boolean capacidadCazar, String nombre, int anosVida, double peso, double tamano) {
+        super(domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
+    }
+
+    public Ave(double maximoAlturaVuelo, double tamanoAlas, boolean volar, boolean nadar) {
+        this.maximoAlturaVuelo = maximoAlturaVuelo;
+        this.tamanoAlas = tamanoAlas;
+        this.volar = volar;
+        this.nadar = nadar;
+    }
+    
+    
 
     public double getMaximoAlturaVuelo() {
         return maximoAlturaVuelo;

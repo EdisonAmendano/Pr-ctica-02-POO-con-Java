@@ -17,7 +17,25 @@ public abstract class Vegetal extends SerVivo implements Acciones{
     private boolean fruto;
     private String usoVegetal;
     private String lugarCrecimiento;
+    
+    public Vegetal(){
+        
+    }
 
+    public Vegetal(String nombre, int anosVida, double peso, double tamano) {
+        super(nombre, anosVida, peso, tamano);
+    }
+
+    public Vegetal(boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano) {
+        super(nombre, anosVida, peso, tamano);
+        this.hojas = hojas;
+        this.fruto = fruto;
+        this.usoVegetal = usoVegetal;
+        this.lugarCrecimiento = lugarCrecimiento;
+    }
+
+    
+    
     public boolean isHojas() {
         return hojas;
     }

@@ -14,6 +14,21 @@ public abstract class SerVivo {
     private int anosVida;
     private double peso;
     private double tamano;
+    
+    public SerVivo(){
+        
+    }
+    
+    public SerVivo(String nombre){
+        
+    }
+
+    public SerVivo(String nombre, int anosVida, double peso, double tamano) {
+        this.nombre = nombre;
+        this.anosVida = anosVida;
+        this.peso = peso;
+        this.tamano = tamano;
+    }
 
     public String getNombre() {
         return nombre;

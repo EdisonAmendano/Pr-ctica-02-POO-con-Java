@@ -16,6 +16,21 @@ public final class NoVascular extends Vegetal implements Acciones{
     private String tipo;
     private boolean rizoides;
     private boolean escamas;
+    
+    public NoVascular(){
+        
+    }
+
+    public NoVascular(boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano) {
+        super(hojas, fruto, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
+    }
+
+    public NoVascular(String tipo, boolean rizoides, boolean escamas, boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano) {
+        super(hojas, fruto, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
+        this.tipo = tipo;
+        this.rizoides = rizoides;
+        this.escamas = escamas;
+    }
 
     public String getTipo() {
         return tipo;
