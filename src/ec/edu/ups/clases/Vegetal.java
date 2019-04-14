@@ -82,7 +82,7 @@ public abstract class Vegetal extends SerVivo implements Acciones{
 
     @Override
     public String toString() {
-        return "Vegetal{" + "hojas=" + hojas + ", fruto=" + fruto + ", usoVegetal=" + usoVegetal + ", lugarCrecimiento=" + lugarCrecimiento + '}';
+        return super.toString()+ ", Tiene hojas: " + hojas + ", Tiene frutos: " + fruto + ", Uso del Vegetal: " + usoVegetal + ", Lugar de Crecimiento: " + lugarCrecimiento;
     }
 
     @Override

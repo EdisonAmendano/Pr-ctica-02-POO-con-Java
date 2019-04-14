@@ -78,7 +78,7 @@ public final class Pez extends Animal implements Acciones{
 
     @Override
     public String toString() {
-        return "Pez{" + "profundidad=" + profundidad + ", numeroDeAletas=" + numeroDeAletas + ", aguaDulceSalada=" + aguaDulceSalada + ", tipoDePez=" + tipoDePez + '}';
+        return "Pez: "+super.toString()+ ", Profundidad: " + profundidad + ", Numero De Aletas: " + numeroDeAletas + ", Agua Dulce o Salada: " + aguaDulceSalada + ", Tipo De Pez: " + tipoDePez;
     }
 
     @Override

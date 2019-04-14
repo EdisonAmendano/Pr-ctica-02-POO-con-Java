@@ -79,7 +79,7 @@ public abstract class Animal extends SerVivo implements Acciones{
 
     @Override
     public String toString() {
-        return "Animal{" + "domesticoSalvaje=" + domesticoSalvaje + ", color=" + color + ", tipoAlimento=" + tipoAlimento + ", capacidadCazar=" + capacidadCazar + '}';
+        return super.toString()+", Domestico o Salvaje: " + domesticoSalvaje + ", Color: " + color + ", Tipo de Alimento: " + tipoAlimento + ", CapacidadCazar: " + capacidadCazar ;
     }
 
     @Override

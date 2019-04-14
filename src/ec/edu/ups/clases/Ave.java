@@ -26,13 +26,14 @@ public final class Ave extends Animal implements Acciones{
         super(domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
     }
 
-    public Ave(double maximoAlturaVuelo, double tamanoAlas, boolean volar, boolean nadar) {
+    public Ave(double maximoAlturaVuelo, double tamanoAlas, boolean volar, boolean nadar, String domesticoSalvaje, String color, String tipoAlimento, boolean capacidadCazar, String nombre, int anosVida, double peso, double tamano) {
+        super(domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
         this.maximoAlturaVuelo = maximoAlturaVuelo;
         this.tamanoAlas = tamanoAlas;
         this.volar = volar;
         this.nadar = nadar;
     }
-    
+
     
 
     public double getMaximoAlturaVuelo() {
@@ -75,6 +76,11 @@ public final class Ave extends Animal implements Acciones{
     }
     public boolean ponerHuevos(){
         return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Ave: " + super.toString()+ ", Maximo de la Altura de Vuelo: " + maximoAlturaVuelo + ", Tamaño de las Alas: " + tamanoAlas + ", Sabe volar: " + volar + ", sabe nadar: " + nadar;
     }
 
     @Override

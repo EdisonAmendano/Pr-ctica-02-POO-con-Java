@@ -78,7 +78,7 @@ public final class Vascular extends Vegetal implements Acciones{
 
     @Override
     public String toString() {
-        return "Vascular{" + "tamanoRaiz=" + tamanoRaiz + ", tamanoallo=" + tamanoallo + ", tamanoHoja=" + tamanoHoja + ", cantidadMaximaFrutos=" + cantidadMaximaFrutos + '}';
+        return "Vascular: "+super.toString()+ ", Tamaño de la Raiz: " + tamanoRaiz + ", Tamaño del tallo: " + tamanoallo + ", Tamaño de la Hoja: " + tamanoHoja + ", Cantidad Maxima de Frutos: " + cantidadMaximaFrutos;
     }
 
     @Override

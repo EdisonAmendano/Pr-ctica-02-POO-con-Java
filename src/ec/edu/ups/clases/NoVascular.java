@@ -16,6 +16,7 @@ public final class NoVascular extends Vegetal implements Acciones{
     private String tipo;
     private boolean rizoides;
     private boolean escamas;
+    private double cantidadEscamas;
     
     public NoVascular(){
         
@@ -25,11 +26,12 @@ public final class NoVascular extends Vegetal implements Acciones{
         super(hojas, fruto, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
     }
 
-    public NoVascular(String tipo, boolean rizoides, boolean escamas, boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano) {
+    public NoVascular(String tipo, boolean rizoides, boolean escamas, boolean hojas, boolean fruto, String usoVegetal, String lugarCrecimiento, String nombre, int anosVida, double peso, double tamano, double cantidadEscamas) {
         super(hojas, fruto, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
         this.tipo = tipo;
         this.rizoides = rizoides;
         this.escamas = escamas;
+        this.cantidadEscamas = cantidadEscamas;
     }
 
     public String getTipo() {
@@ -55,6 +57,15 @@ public final class NoVascular extends Vegetal implements Acciones{
     public void setEscamas(boolean escamas) {
         this.escamas = escamas;
     }
+
+    public double getCantidadEscamas() {
+        return cantidadEscamas;
+    }
+
+    public void setCantidadEscamas(double cantidadEscamas) {
+        this.cantidadEscamas = cantidadEscamas;
+    }
+    
     
     public boolean hacerFotosintecis(){
         return true;
@@ -65,6 +76,13 @@ public final class NoVascular extends Vegetal implements Acciones{
     public boolean botarCO2(){
         return true;
     }
+
+    @Override
+    public String toString() {
+        return "No Vascular: "+super.toString() + ", Tipo: " + tipo + ", tiene rizoides: " + rizoides + ", tiene escamas: " + escamas +"Cantidad de escamas: "+ cantidadEscamas;
+    }
+    
+    
 
     @Override
     public boolean usarVegetal() {

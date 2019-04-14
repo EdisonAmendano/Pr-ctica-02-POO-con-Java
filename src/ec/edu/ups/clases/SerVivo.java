@@ -75,7 +75,7 @@ public abstract class SerVivo {
 
     @Override
     public String toString() {
-        return "SerVivo{" + "nombre=" + nombre + ", anosVida=" + anosVida + ", peso=" + peso + ", tamano=" + tamano + '}';
+        return "Nombre: " + nombre + ", Años de Vida: " + anosVida + ", Peso: " + peso + ", Tamaño: " + tamano;
     }
     
     
