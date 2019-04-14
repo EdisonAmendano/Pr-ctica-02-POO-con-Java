@@ -8,16 +8,16 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Acciones;
 
 /**
- *
+ * Vegetal
  * @author Edison
  */
 public abstract class Vegetal extends SerVivo implements Acciones{
-    
+    // atributos
     private boolean hojas;
     private boolean fruto;
     private String usoVegetal;
     private String lugarCrecimiento;
-    
+    // constructores
     public Vegetal(){
         
     }
@@ -35,7 +35,7 @@ public abstract class Vegetal extends SerVivo implements Acciones{
     }
 
     
-    
+    // getters y setters
     public boolean isHojas() {
         return hojas;
     }
@@ -67,7 +67,7 @@ public abstract class Vegetal extends SerVivo implements Acciones{
     public void setLugarCrecimiento(String lugarCrecimiento) {
         this.lugarCrecimiento = lugarCrecimiento;
     }
-    
+    // metodos
     public boolean hacerFotosintecis(){
         return true;
     }
@@ -77,14 +77,14 @@ public abstract class Vegetal extends SerVivo implements Acciones{
     public boolean botarCO2(){
         return true;
     }
-    
+    // metodo abstracto
     public abstract boolean usarVegetal();
-
+    // toString
     @Override
     public String toString() {
         return super.toString()+ ", Tiene hojas: " + hojas + ", Tiene frutos: " + fruto + ", Uso del Vegetal: " + usoVegetal + ", Lugar de Crecimiento: " + lugarCrecimiento;
     }
-
+    // implementacion de metodos abtractos
     @Override
     public boolean vivir() {
         return true;

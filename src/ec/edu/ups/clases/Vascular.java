@@ -8,15 +8,16 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Acciones;
 
 /**
- *
+ * Vascular
  * @author Edison
  */
 public final class Vascular extends Vegetal implements Acciones{
+    // atrivutos
     private double tamanoRaiz;
     private double tamanoallo;
     private double tamanoHoja;
     private int cantidadMaximaFrutos;
-    
+    // constructores
     public Vascular(){
         
     }
@@ -33,7 +34,7 @@ public final class Vascular extends Vegetal implements Acciones{
         this.cantidadMaximaFrutos = cantidadMaximaFrutos;
     }
     
-
+    // getters y setters
     public double getTamanoRaiz() {
         return tamanoRaiz;
     }
@@ -65,7 +66,7 @@ public final class Vascular extends Vegetal implements Acciones{
     public void setCantidadMaximaFrutos(int cantidadMaximaFrutos) {
         this.cantidadMaximaFrutos = cantidadMaximaFrutos;
     }
-    
+    // metodos
     public boolean hacerFotosintecis(){
         return true;
     }
@@ -75,12 +76,12 @@ public final class Vascular extends Vegetal implements Acciones{
     public boolean botarCO2(){
         return true;
     }
-
+    // toString
     @Override
     public String toString() {
         return "Vascular: "+super.toString()+ ", Tamaño de la Raiz: " + tamanoRaiz + ", Tamaño del tallo: " + tamanoallo + ", Tamaño de la Hoja: " + tamanoHoja + ", Cantidad Maxima de Frutos: " + cantidadMaximaFrutos;
     }
-
+    // implementacion metodos abstractos
     @Override
     public boolean usarVegetal() {
         return true;

@@ -8,15 +8,16 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Acciones;
 
 /**
- *
+ * Pez
  * @author Edison
  */
 public final class Pez extends Animal implements Acciones{
+    // atributos
     private double profundidad;
     private int numeroDeAletas;
     private String aguaDulceSalada;
     private String tipoDePez;
-    
+    // constructores
     public Pez (){
         
     }
@@ -33,7 +34,7 @@ public final class Pez extends Animal implements Acciones{
         this.tipoDePez = tipoDePez;
     }
     
-
+    // getters y setters
     public double getProfundidad() {
         return profundidad;
     }
@@ -57,7 +58,7 @@ public final class Pez extends Animal implements Acciones{
     public void setAguaDulceSalada(String aguaDulceSalada) {
         this.aguaDulceSalada = aguaDulceSalada;
     }
-
+    
     public String getTipoDePez() {
         return tipoDePez;
     }
@@ -65,8 +66,8 @@ public final class Pez extends Animal implements Acciones{
     public void setTipoDePez(String tipoDePez) {
         this.tipoDePez = tipoDePez;
     }
-    
-     public boolean nadar(){
+    // metodos
+    public boolean nadar(){
         return true;
     }
     public boolean cazrComida(){
@@ -75,12 +76,12 @@ public final class Pez extends Animal implements Acciones{
     public boolean ponerHuevos(){
         return true;
     }
-
+    // toString
     @Override
     public String toString() {
         return "Pez: "+super.toString()+ ", Profundidad: " + profundidad + ", Numero De Aletas: " + numeroDeAletas + ", Agua Dulce o Salada: " + aguaDulceSalada + ", Tipo De Pez: " + tipoDePez;
     }
-
+    // implementacion de metodos abstractos
     @Override
     public boolean cazarAnimal() {
         return true;

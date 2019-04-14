@@ -30,6 +30,7 @@ public class Main {
         Scanner l = new Scanner(System.in);
         Scanner l2 = new Scanner(System.in);
         Scanner l3 = new Scanner(System.in);
+        System.out.println("INGRESAR DATOS DEL PEZ:");
         System.out.println("Ingresar nombre");
         String nombre = l.nextLine();
         System.out.println("Ingresar los años de vida");
@@ -55,7 +56,7 @@ public class Main {
         System.out.println("Ingrese que tipo de pez es");
         String tipo = l.nextLine();
         Pez pez = new Pez(profundida, aletas, dulceSalada, tipo, domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
-
+        System.out.println("INGRESAR DATOS DEL AVE:");
         System.out.println("Ingresar nombre");
         nombre = l.nextLine();
         System.out.println("Ingresar los años de vida");
@@ -81,7 +82,8 @@ public class Main {
         System.out.println("Ingrese si es capaz de nadar (true/false)");
         boolean capacidadNadar = l2.nextBoolean();
         Ave ave = new Ave(maximaalturaVuelo, tamanoAlas, capacidadvolar, capacidadNadar, domesticoSalvaje, color, tipoAlimento, capacidadCazar, nombre, anosVida, peso, tamano);
-
+        
+        System.out.println("INGRESAR DATOS DEL VEGETAL VASCULAR:");
         System.out.println("Ingresar nombre");
         nombre = l.nextLine();
         System.out.println("Ingresar los años de vida");
@@ -107,7 +109,8 @@ public class Main {
         System.out.println("Ingrese la cantidad maxiam de fruto que produce");
         int cantidadMaximaFrutos = l2.nextInt();
         Vascular vascular = new Vascular(tamanoRaiz, tamanoTallo, tamanoHoja, cantidadMaximaFrutos, hojas, frua, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano);
-
+        
+        System.out.println("INGRESAR DATOS DEL VEGETAL NO VASCULAR:");
         System.out.println("Ingresar nombre");
         nombre = l.nextLine();
         System.out.println("Ingresar los años de vida");
@@ -133,7 +136,12 @@ public class Main {
         System.out.println("Ingrese la cantidad de escamas");
         double cantidadEscamas = l2.nextDouble();
         NoVascular noVascular = new NoVascular(tipo, rizoides, escamas, hojas, frua, usoVegetal, lugarCrecimiento, nombre, anosVida, peso, tamano, cantidadEscamas);
-
+        System.out.println(pez);
+        System.out.println(ave);
+        System.out.println(vascular);
+        System.out.println(noVascular);
+        System.out.println("\n");
+        System.out.println("Verificacion del uso de downcasting con el operador instanceof\n");
         lista2.add(ave);
         lista2.add(pez);
         lista3.add(vascular);
@@ -158,6 +166,7 @@ public class Main {
             }
         }
         
+        System.out.println("Verificacion del uso de la clase anonima");
         SerVivo serVivoAnonimo = new SerVivo("tiburon", 10, 80, 80) {
             @Override
             public boolean vivir() {

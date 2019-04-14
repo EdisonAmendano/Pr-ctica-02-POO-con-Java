@@ -8,15 +8,17 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Acciones;
 
 /**
- *
+ * Animal
  * @author Edison
  */
 public abstract class Animal extends SerVivo implements Acciones{
+    //atributos
     private String domesticoSalvaje;
     private String color;
     private String tipoAlimento;
     private boolean capacidadCazar;
     
+    //Constructores
     public Animal(){
         
     }
@@ -33,6 +35,7 @@ public abstract class Animal extends SerVivo implements Acciones{
         this.capacidadCazar = capacidadCazar;
     }
 
+    // getters y setters
     public String getDomesticoSalvaje() {
         return domesticoSalvaje;
     }
@@ -65,6 +68,7 @@ public abstract class Animal extends SerVivo implements Acciones{
         this.capacidadCazar = capacidadCazar;
     }
     
+    // metodos
     public boolean jugar(){
         return true;
     }
@@ -75,13 +79,16 @@ public abstract class Animal extends SerVivo implements Acciones{
         return true;
     }
     
+    // metodo abstracto
     public abstract boolean cazarAnimal();
-
+    
+    // toString
     @Override
     public String toString() {
         return super.toString()+", Domestico o Salvaje: " + domesticoSalvaje + ", Color: " + color + ", Tipo de Alimento: " + tipoAlimento + ", CapacidadCazar: " + capacidadCazar ;
     }
 
+    // implementacion metodos abtractos
     @Override
     public boolean vivir() {
         return true;

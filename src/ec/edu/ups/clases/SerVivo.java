@@ -6,15 +6,17 @@
 package ec.edu.ups.clases;
 
 /**
- *
+ * SerVivo
  * @author Edison
  */
 public abstract class SerVivo {
+    // atrivutos
     private String nombre;
     private int anosVida;
     private double peso;
     private double tamano;
     
+    // constructores
     public SerVivo(){
         
     }
@@ -29,7 +31,8 @@ public abstract class SerVivo {
         this.peso = peso;
         this.tamano = tamano;
     }
-
+    
+    // getters y setters
     public String getNombre() {
         return nombre;
     }
@@ -62,6 +65,7 @@ public abstract class SerVivo {
         this.tamano = tamano;
     }
     
+    // metodos
     public boolean nacer(){
         return true;
     }
@@ -71,8 +75,10 @@ public abstract class SerVivo {
       public boolean morir(){
         return true;
     }
-      public abstract boolean vivir();
+    // metodo abstracto
+    public abstract boolean vivir();
 
+    // toString
     @Override
     public String toString() {
         return "Nombre: " + nombre + ", Años de Vida: " + anosVida + ", Peso: " + peso + ", Tamaño: " + tamano;

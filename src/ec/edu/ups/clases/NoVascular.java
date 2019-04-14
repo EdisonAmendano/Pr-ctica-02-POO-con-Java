@@ -8,16 +8,16 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Acciones;
 
 /**
- *
+ * Novascular
  * @author Edison
  */
 public final class NoVascular extends Vegetal implements Acciones{
-    
+    // atrivutos
     private String tipo;
     private boolean rizoides;
     private boolean escamas;
     private double cantidadEscamas;
-    
+    // constructores
     public NoVascular(){
         
     }
@@ -33,7 +33,7 @@ public final class NoVascular extends Vegetal implements Acciones{
         this.escamas = escamas;
         this.cantidadEscamas = cantidadEscamas;
     }
-
+    // getters y setters
     public String getTipo() {
         return tipo;
     }
@@ -66,7 +66,7 @@ public final class NoVascular extends Vegetal implements Acciones{
         this.cantidadEscamas = cantidadEscamas;
     }
     
-    
+    // metodos
     public boolean hacerFotosintecis(){
         return true;
     }
@@ -76,14 +76,13 @@ public final class NoVascular extends Vegetal implements Acciones{
     public boolean botarCO2(){
         return true;
     }
-
+    // toString
     @Override
     public String toString() {
         return "No Vascular: "+super.toString() + ", Tipo: " + tipo + ", tiene rizoides: " + rizoides + ", tiene escamas: " + escamas +"Cantidad de escamas: "+ cantidadEscamas;
     }
     
-    
-
+    // implementacion de metodos abstractos
     @Override
     public boolean usarVegetal() {
         return true;

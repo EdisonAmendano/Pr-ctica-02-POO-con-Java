@@ -8,16 +8,16 @@ package ec.edu.ups.clases;
 import ec.edu.ups.interfaces.Acciones;
 
 /**
- *
+ * Ave
  * @author Edison
  */
 public final class Ave extends Animal implements Acciones{
-    
+    // atrivutos
     private double maximoAlturaVuelo;
     private double tamanoAlas;
     private boolean volar;
     private boolean nadar;
-    
+    // constructores
     public Ave(){
         
     }
@@ -35,7 +35,7 @@ public final class Ave extends Animal implements Acciones{
     }
 
     
-
+    // getters y setters
     public double getMaximoAlturaVuelo() {
         return maximoAlturaVuelo;
     }
@@ -67,7 +67,7 @@ public final class Ave extends Animal implements Acciones{
     public void setNadar(boolean nadar) {
         this.nadar = nadar;
     }
-    
+    // metodos
     public boolean volar(){
         return true;
     }
@@ -77,12 +77,12 @@ public final class Ave extends Animal implements Acciones{
     public boolean ponerHuevos(){
         return true;
     }
-
+    // toString
     @Override
     public String toString() {
         return "Ave: " + super.toString()+ ", Maximo de la Altura de Vuelo: " + maximoAlturaVuelo + ", Tamaño de las Alas: " + tamanoAlas + ", Sabe volar: " + volar + ", sabe nadar: " + nadar;
     }
-
+    // implementacion metodos abstractos
     @Override
     public boolean cazarAnimal() {
         return true;
