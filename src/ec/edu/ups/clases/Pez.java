@@ -61,6 +61,11 @@ public class Pez extends Animal{
     public String toString() {
         return "Pez{" + "profundidad=" + profundidad + ", numeroDeAletas=" + numeroDeAletas + ", aguaDulceSalada=" + aguaDulceSalada + ", tipoDePez=" + tipoDePez + '}';
     }
+
+    @Override
+    public boolean cazarAnimal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

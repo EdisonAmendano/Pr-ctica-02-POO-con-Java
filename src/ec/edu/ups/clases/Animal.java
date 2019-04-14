@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class Animal extends SerVivo{
+public abstract class Animal extends SerVivo{
     private String domesticoSalvaje;
     private String color;
     private String tipoAlimento;
@@ -56,10 +56,17 @@ public class Animal extends SerVivo{
     public boolean dormir(){
         return true;
     }
+    
+    public abstract boolean cazarAnimal();
 
     @Override
     public String toString() {
         return "Animal{" + "domesticoSalvaje=" + domesticoSalvaje + ", color=" + color + ", tipoAlimento=" + tipoAlimento + ", capacidadCazar=" + capacidadCazar + '}';
+    }
+
+    @Override
+    public boolean vivir() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

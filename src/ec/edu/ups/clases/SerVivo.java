@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class SerVivo {
+public abstract class SerVivo {
     private String nombre;
     private int anosVida;
     private double peso;
@@ -56,6 +56,7 @@ public class SerVivo {
       public boolean morir(){
         return true;
     }
+      public abstract boolean vivir();
 
     @Override
     public String toString() {

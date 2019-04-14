@@ -61,6 +61,11 @@ public class Vascular extends Vegetal{
     public String toString() {
         return "Vascular{" + "tamanoRaiz=" + tamanoRaiz + ", tamanoallo=" + tamanoallo + ", tamanoHoja=" + tamanoHoja + ", cantidadMaximaFrutos=" + cantidadMaximaFrutos + '}';
     }
+
+    @Override
+    public boolean usarVegetal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 

@@ -9,7 +9,7 @@ package ec.edu.ups.clases;
  *
  * @author Edison
  */
-public class Vegetal extends SerVivo{
+public abstract class Vegetal extends SerVivo{
     
     private boolean hojas;
     private boolean fruto;
@@ -57,10 +57,17 @@ public class Vegetal extends SerVivo{
     public boolean botarCO2(){
         return true;
     }
+    
+    public abstract boolean usarVegetal();
 
     @Override
     public String toString() {
         return "Vegetal{" + "hojas=" + hojas + ", fruto=" + fruto + ", usoVegetal=" + usoVegetal + ", lugarCrecimiento=" + lugarCrecimiento + '}';
+    }
+
+    @Override
+    public boolean vivir() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
   
 }

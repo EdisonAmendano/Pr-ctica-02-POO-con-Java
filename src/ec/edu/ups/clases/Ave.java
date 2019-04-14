@@ -57,4 +57,9 @@ public class Ave extends Animal{
     public boolean ponerHuevos(){
         return true;
     }
+
+    @Override
+    public boolean cazarAnimal() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
