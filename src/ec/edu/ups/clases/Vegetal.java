@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  *
  * @author Edison
  */
-public abstract class Vegetal extends SerVivo{
+public abstract class Vegetal extends SerVivo implements Acciones{
     
     private boolean hojas;
     private boolean fruto;
@@ -67,6 +69,15 @@ public abstract class Vegetal extends SerVivo{
 
     @Override
     public boolean vivir() {
+        return true;
+    }
+    
+    @Override
+    public boolean nacer(){
+        return true;
+    }
+    @Override
+    public boolean reproducirse(){
         return true;
     }
   

@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  *
  * @author Edison
  */
-public final class NoVascular extends Vegetal{
+public final class NoVascular extends Vegetal implements Acciones{
     
     private String tipo;
     private boolean rizoides;
@@ -53,5 +55,12 @@ public final class NoVascular extends Vegetal{
     public boolean usarVegetal() {
         return true;
     }
-    
+    @Override
+    public boolean nacer(){
+        return true;
+    }
+    @Override
+    public boolean reproducirse(){
+        return true;
+    }
 }

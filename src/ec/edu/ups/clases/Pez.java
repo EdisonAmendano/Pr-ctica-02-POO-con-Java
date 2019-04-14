@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  *
  * @author Edison
  */
-public final class Pez extends Animal{
+public final class Pez extends Animal implements Acciones{
     private double profundidad;
     private int numeroDeAletas;
     private String aguaDulceSalada;
@@ -64,6 +66,15 @@ public final class Pez extends Animal{
 
     @Override
     public boolean cazarAnimal() {
+        return true;
+    }
+    
+    @Override
+    public boolean nacer(){
+        return true;
+    }
+    @Override
+    public boolean reproducirse(){
         return true;
     }
     

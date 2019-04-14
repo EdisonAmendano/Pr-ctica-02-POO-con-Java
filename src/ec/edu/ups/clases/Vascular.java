@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  *
  * @author Edison
  */
-public final class Vascular extends Vegetal{
+public final class Vascular extends Vegetal implements Acciones{
     private double tamanoRaiz;
     private double tamanoallo;
     private double tamanoHoja;
@@ -67,6 +69,13 @@ public final class Vascular extends Vegetal{
         return true;
     }
     
-    
+    @Override
+    public boolean nacer(){
+        return true;
+    }
+    @Override
+    public boolean reproducirse(){
+        return true;
+    }
 
 }

@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  *
  * @author Edison
  */
-public abstract class Animal extends SerVivo{
+public abstract class Animal extends SerVivo implements Acciones{
     private String domesticoSalvaje;
     private String color;
     private String tipoAlimento;
@@ -66,6 +68,15 @@ public abstract class Animal extends SerVivo{
 
     @Override
     public boolean vivir() {
+        return true;
+    }
+    
+    @Override
+    public boolean nacer(){
+        return true;
+    }
+    @Override
+    public boolean reproducirse(){
         return true;
     }
     

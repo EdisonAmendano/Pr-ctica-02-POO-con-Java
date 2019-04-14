@@ -5,11 +5,13 @@
  */
 package ec.edu.ups.clases;
 
+import ec.edu.ups.interfaces.Acciones;
+
 /**
  *
  * @author Edison
  */
-public final class Ave extends Animal{
+public final class Ave extends Animal implements Acciones{
     
     private double maximoAlturaVuelo;
     private double tamanoAlas;
@@ -60,6 +62,15 @@ public final class Ave extends Animal{
 
     @Override
     public boolean cazarAnimal() {
+        return true;
+    }
+    
+    @Override
+    public boolean nacer(){
+        return true;
+    }
+    @Override
+    public boolean reproducirse(){
         return true;
     }
 }
