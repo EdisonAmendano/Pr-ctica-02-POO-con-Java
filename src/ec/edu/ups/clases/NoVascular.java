@@ -73,7 +73,7 @@ public final class NoVascular extends Vegetal implements Acciones{
     public boolean consumirO2(){
         return true;
     }
-    public boolean botarCO2(){
+    public boolean votarCO2(){
         return true;
     }
     // toString
